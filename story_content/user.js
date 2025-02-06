@@ -5,7 +5,7 @@ var object = player.object;
 var addToTimeline = player.addToTimeline;
 var setVar = player.SetVar;
 var getVar = player.GetVar;
-window.Script26 = function()
+window.Script16 = function()
 {
   function add_script(scriptURL,oID) {
      var scriptEl = document.createElement("script");
