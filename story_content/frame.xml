@@ -1565,7 +1565,6 @@
             <slidelink slideid="_player.6ngYVdmNa5e.5oe5vh4EZzi" displaytext="ENTRENAMIENTO" expand="false" type="slide" />
             <slidelink slideid="_player.6ngYVdmNa5e.5jrpD1TgiZr" displaytext="PLAN 20MIL" expand="false" type="slide" />
             <slidelink slideid="_player.6ngYVdmNa5e.6mcMdsGcdpa" displaytext="ENTRENAMIENTO VIRTUAL" expand="false" type="slide" />
-            <slidelink slideid="_player.6ngYVdmNa5e.5mJBTypSoju" displaytext="PLAN ANUAL DE EDUCACIÓN" expand="false" type="slide" />
             <slidelink slideid="_player.6ngYVdmNa5e.6KDdmt1j1fZ" displaytext="BECAS" expand="false" type="slide" />
             <slidelink slideid="_player.6ngYVdmNa5e.6bZArHgKO0w" displaytext="Diapositiva sin título" expand="false" type="slide" />
           </links>
@@ -1593,8 +1592,11 @@
             <slidelink slideid="_player.6ZA9m4l4esl.5l65CUtjUn1" displaytext="PROYECCIONES 2025" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="" displaytext="vicin_logos MDN" expand="true" type="slide" />
-        <slidelink slideid="" displaytext="ITEMS " expand="true" type="slide" />
+        <slidelink slideid="_player.5a4lPBxalJv" displaytext="vicin_logos MDN" expand="true" type="slide">
+          <links>
+            <slidelink slideid="_player.5a4lPBxalJv.6jVt73247ej" displaytext="PLAN ANUAL DE EDUCACIÓN" expand="false" type="slide" />
+          </links>
+        </slidelink>
       </links>
     </outline>
   </nav_data>
