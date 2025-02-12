@@ -5,59 +5,45 @@ var object = player.object;
 var addToTimeline = player.addToTimeline;
 var setVar = player.SetVar;
 var getVar = player.GetVar;
-window.Script21 = function()
+window.Script19 = function()
 {
-  function add_script(scriptURL,oID) {
-     var scriptEl = document.createElement("script");
-     var head=document.getElementsByTagName('head')[0];
-      scriptEl.type = "text/javascript";      
-      scriptEl.src = scriptURL;      
-      scriptEl.id=oID;      
-      head.appendChild(scriptEl);}
+  var elem = document.documentElement;
 
-//only want to add these once!
-if(document.getElementById('jquery')==null){
-add_script("https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js","jquery");
-
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
 }
 
 
-/* Get into full screen */
-function GoInFullscreen(preso) {
-	if(preso.requestFullscreen)
-		preso.requestFullscreen();
-	else if(preso.mozRequestFullScreen)
-		preso.mozRequestFullScreen();
-	else if(preso.webkitRequestFullscreen)
-		preso.webkitRequestFullscreen();
-	else if(preso.msRequestFullscreen)
-		preso.msRequestFullscreen();
+if(document.fullscreenElement == null){
+openFullscreen();
+};
+
 }
 
-/* Get out of full screen */
-function GoOutFullscreen() {
-	if(document.exitFullscreen)
-		document.exitFullscreen();
-	else if(document.mozCancelFullScreen)
-		document.mozCancelFullScreen();
-	else if(document.webkitExitFullscreen)
-		document.webkitExitFullscreen();
-	else if(document.msExitFullscreen)
-		document.msExitFullscreen();
+window.Script20 = function()
+{
+  var elem = document.documentElement;
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
 }
 
-/* Is currently in full screen or not */
-function IsFullScreenCurrently() {
-	var full_screen_preso = document.fullscreenpreso || document.webkitFullscreenpreso || document.mozFullScreenpreso || document.msFullscreenpreso || null;
-	
-	// If no preso is in full-screen
-	if(full_screen_preso === null)
-		return false;
-	else
-		return true;
-}
 
-GoInFullscreen($("#preso").get(0));
+if(document.fullscreenElement == null){
+openFullscreen();
+};
 
 }
 
