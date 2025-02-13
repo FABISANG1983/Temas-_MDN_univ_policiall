@@ -5,7 +5,7 @@ var object = player.object;
 var addToTimeline = player.addToTimeline;
 var setVar = player.SetVar;
 var getVar = player.GetVar;
-window.Script19 = function()
+window.Script21 = function()
 {
   var elem = document.documentElement;
 
@@ -26,7 +26,7 @@ openFullscreen();
 
 }
 
-window.Script20 = function()
+window.Script22 = function()
 {
   var elem = document.documentElement;
 
